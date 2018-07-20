@@ -3,35 +3,29 @@
 #### 项目介绍
 lenovo v310 i5 6200U 的黑苹果配置文件
 
-#### 软件架构
-软件架构说明
+#### 电脑基本信息
+
+电脑型号	联想 80SY 笔记本电脑  (扫描时间：2017年12月19日)
+操作系统	Windows 10 专业版 64位 ( DirectX 12 )
+
+处理器	英特尔 Core i5-6200U @ 2.30GHz 双核
+主板	联想 LV6/LV7 ( 英特尔 PCI 标准主机 CPU 桥 - 100 Series 芯片组 Family/eSPI Controller - 9D48 )
+内存	8 GB ( 三星 DDR4 2400MHz )
+主硬盘	TIGO SSD ( 120 GB / 固态硬盘 )
+显卡	AMD Radeon  R5 M430 ( 2 GB / 联想 )
+显示器	奇美 CMN15D5 ( 15.3 英寸  )
+声卡	瑞昱  @ 英特尔 High Definition Audio 控制器
+网卡	瑞昱 RTL8168/8111/8112 Gigabit Ethernet Controller / 联想
 
 
 #### 安装教程
 
-1. xxxx
+1. 
 2. xxxx
 3. xxxx
 
-#### 使用说明
+#### 版本更新说明
 
-1. xxxx
+1. 实现正常驱动
 2. xxxx
 3. xxxx
-
-#### 参与贡献
-
-1. Fork 本项目
-2. 新建 Feat_xxx 分支
-3. 提交代码
-4. 新建 Pull Request
-
-
-#### 码云特技
-
-1. 使用 Readme\_XXX.md 来支持不同的语言，例如 Readme\_en.md, Readme\_zh.md
-2. 码云官方博客 [blog.gitee.com](https://blog.gitee.com)
-3. 你可以 [https://gitee.com/explore](https://gitee.com/explore) 这个地址来了解码云上的优秀开源项目
-4. [GVP](https://gitee.com/gvp) 全称是码云最有价值开源项目，是码云综合评定出的优秀开源项目
-5. 码云官方提供的使用手册 [http://git.mydoc.io/](http://git.mydoc.io/)
-6. 码云封面人物是一档用来展示码云会员风采的栏目 [https://gitee.com/gitee-stars/](https://gitee.com/gitee-stars/)
