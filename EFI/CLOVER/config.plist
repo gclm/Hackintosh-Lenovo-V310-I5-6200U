@@ -290,6 +290,7 @@
 		<key>SortedOrder</key>
 		<array>
 			<string>SSDT-Disable-DGPU.aml</string>
+			<string>SSDT-pr.aml</string>
 		</array>
 	</dict>
 	<key>Boot</key>
@@ -451,7 +452,7 @@
 			<false/>
 		</dict>
 		<key>ig-platform-id</key>
-		<string>0x19160000</string>
+		<string>0x191B0000</string>
 	</dict>
 	<key>KernelAndKextPatches</key>
 	<dict>
@@ -562,60 +563,38 @@
 			</dict>
 			<dict>
 				<key>Comment</key>
-				<string>Change VRAM 1536 -&gt; 2048 for 0x19160000</string>
+				<string>USB Port limit patch 10.14 (credits FredWst)</string>
 				<key>Disabled</key>
 				<false/>
 				<key>Find</key>
 				<data>
-				AAAAYGwFAABsBQAAAAAA
+				g/sPD4MDBQAA
 				</data>
 				<key>InfoPlistPatch</key>
 				<false/>
-				<key>Name</key>
-				<string>AppleIntelSKLGraphicsFramebuffer</string>
-				<key>Replace</key>
-				<data>
-				AAAAgGwFAABsBQAAAAAA
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>MSR 0xE2 _xcpm_idle instant reboot(c) Pike R. Alpha</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				qqra
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.12</string>
-				<key>Name</key>
-				<string>_xcpm_idle</string>
-				<key>Replace</key>
-				<data>
-				qqo=
-				</data>
-			</dict>
-			<dict>
-				<key>Comment</key>
-				<string>disable USB Port Limit Patch (PMheart)</string>
-				<key>Disabled</key>
-				<false/>
-				<key>Find</key>
-				<data>
-				g32UDw+DlwQAAA==
-				</data>
-				<key>InfoPlistPatch</key>
-				<false/>
-				<key>MatchOS</key>
-				<string>10.13.x</string>
 				<key>Name</key>
 				<string>com.apple.driver.usb.AppleUSBXHCI</string>
 				<key>Replace</key>
 				<data>
-				g32UD5CQkJCQkA==
+				g/sPkJCQkJCQ
+				</data>
+			</dict>
+			<dict>
+				<key>Comment</key>
+				<string>Disable minStolenSize less or equal fStolenMemorySize assertion, 10.14 Credits (Sniki)</string>
+				<key>Disabled</key>
+				<false/>
+				<key>Find</key>
+				<data>
+				dkBI/wU=
+				</data>
+				<key>InfoPlistPatch</key>
+				<false/>
+				<key>Name</key>
+				<string>com.apple.driver.AppleIntelSKLGraphicsFramebuffer</string>
+				<key>Replace</key>
+				<data>
+				60BI/wU=
 				</data>
 			</dict>
 		</array>
@@ -636,17 +615,17 @@
 	<key>SMBIOS</key>
 	<dict>
 		<key>BiosReleaseDate</key>
-		<string>02/08/2018</string>
+		<string>06/26/2018</string>
 		<key>BiosVendor</key>
 		<string>Apple Inc.</string>
 		<key>BiosVersion</key>
-		<string>MBP141.88Z.0173.B00.1802081002</string>
+		<string>MBP131.88Z.0223.B00.1806260754</string>
 		<key>Board-ID</key>
-		<string>Mac-B4831CEBD52A0C4C</string>
+		<string>Mac-473D31EABEB93F9B</string>
 		<key>BoardManufacturer</key>
 		<string>Apple Inc.</string>
 		<key>BoardSerialNumber</key>
-		<string>C02707600GUDM671M</string>
+		<string>C02733404J9F117UE</string>
 		<key>BoardType</key>
 		<integer>10</integer>
 		<key>BoardVersion</key>
@@ -706,11 +685,11 @@
 		<key>PlatformFeature</key>
 		<string>0x1A</string>
 		<key>ProductName</key>
-		<string>MacBookPro14,1</string>
+		<string>MacBookPro13,1</string>
 		<key>ProductName-Comment</key>
 		<string>Using Haswell MacBookAir6,2 until Clover has support for Skylake identifiers</string>
 		<key>SerialNumber</key>
-		<string>C02T82XYHV29</string>
+		<string>C02V7FYHGVC1</string>
 		<key>SmUUID</key>
 		<string>8CE4AB74-1920-5299-92A5-DBD47BD6928A</string>
 		<key>Version</key>
